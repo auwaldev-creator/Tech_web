@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAHAYA IDENTITY SOLUTIONS LTD</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="YAHAYA IDENTITY SOLUTIONS LTD Logo">
+            </div>
+            <nav class="navbar" id="navMenu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" aria-label="Open navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Leading the Way in Digital Identity and IT Solutions</h1>
+                <p>We specialize in providing secure digital identity verification, onboarding solutions, and comprehensive IT consultancy.</p>
+                <a href="#services" class="button primary">Our Solutions</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-us">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <h3>Empowering Trust Through Technology</h3>
+                <p>YAHAYA IDENTITY SOLUTIONS LTD is a trusted provider of cutting-edge solutions in the information and communication sector. We are dedicated to delivering digital identity authentication systems for both organizations and individuals, with a strong focus on KYC compliance and anti-money laundering (AML) support.</p>
+                <p>Our expertise includes computer programming, IT consultancy, and a wide range of related activities, ensuring our clients receive robust and reliable technological support.</p>
+                <a href="#services" class="button secondary">Learn More About Our Services</a>
+            </div>
+            <div class="about-image">
+                <img src="https://via.placeholder.com/500x350.png?text=Technology+Image" alt="Technology Image">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <img src="https://via.placeholder.com/70x70.png?text=KYC" alt="KYC Compliance">
+                    <h3>KYC & AML Solutions</h3>
+                    <p>We provide advanced Know Your Customer (KYC) and Anti-Money Laundering (AML) solutions to ensure compliance and security for your business.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/70x70.png?text=Identity" alt="Identity Verification">
+                    <h3>Digital Identity Verification</h3>
+                    <p>Our specialized systems offer seamless and secure digital identity authentication for individuals and organizations.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/70x70.png?text=IT" alt="IT Consultancy">
+                    <h3>IT Consultancy</h3>
+                    <p>Offering expert advice and support in computer programming, technology implementation, and digital strategy to drive your success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="cta-contact">
+        <div class="container">
+            <h2>Ready to Transform Your Digital Security?</h2>
+            <p>Reach out to our team of experts today.</p>
+            <a href="mailto:yahayaidentity@gmail.com" class="button primary">Email Us Now</a>
+            <p>Email: <a href="mailto:yahayaidentity@gmail.com">yahayaidentity@gmail.com</a></p>
+            <p>Office Address: No. 4, Kwanar Gadara, Ahmad Bello Road, Potiskum, Yobe State.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.jpg" alt="YAHAYA IDENTITY Logo">
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:yahayaidentity@gmail.com">yahayaidentity@gmail.com</a></p>
+                    <p>Address: No. 4, Kwanar Gadara, Ahmad Bello Road, Potiskum, Yobe State.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 YAHAYA IDENTITY SOLUTIONS LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerButton = document.querySelector('.hamburger-menu');
+            const navMenu = document.getElementById('navMenu');
+            hamburgerButton.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                hamburgerButton.classList.toggle('active');
+            });
+            document.querySelectorAll('#navMenu ul li a').forEach(item => {
+                item.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    hamburgerButton.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
